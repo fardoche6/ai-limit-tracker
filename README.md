@@ -14,6 +14,13 @@ A Chrome/Brave Manifest V3 extension that tracks your rolling usage limits for *
 4. Enable **Developer mode** in the top-right corner.
 5. Click **Load unpacked** and select this folder.
 
+## Usage
+1. After installing, pin the extension to your browser toolbar for easy access.
+2. Open ChatGPT (`chatgpt.com`), Claude (`claude.ai`), or Gemini (`gemini.google.com`) in your browser.
+3. Send prompts as you normally would. The extension will automatically detect them.
+4. Click the **AI Limit Tracker** icon in your toolbar to view your current usage and see exactly when your prompt limits will reset.
+5. (Optional) Read the webhook events at `http://localhost:8000/api/ai-limits` from your local AI agents or applications.
+
 ## Development
 - `manifest.json`: Configuration logic and permissions.
 - `background.js`: Service worker handling the local storage and rolling window timers.
